@@ -78,7 +78,7 @@ class AuthService {
             HomeScreen.routeName,
             (route) => false,
           );
-          // showSnackBar(context, "navigating to new screen");
+          showSnackBar(context, "navigating to new screen");
         },
       );
     } catch (e) {

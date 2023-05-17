@@ -8,10 +8,15 @@ const authRouter = require("./routes/auth");
 // init:
 const PORT = 3000;
 const app = express();
-const DB = "mongodb+srv://bgd4500:gamaa1bad@cluster0.iiwdm6n.mongodb.net/?retryWrites=true&w=majority"
+const DB =
+  "mongodb+srv://bgd4500:gamaa1bad@cluster0.iiwdm6n.mongodb.net/?retryWrites=true&w=majority";
 // middleware
 app.use(express.json());
 app.use(authRouter);
+
+app.get("/helloWorld", (req, res) => {
+  res.send("hello motherfucker");
+});
 
 // connections
 mongoose

@@ -54,7 +54,7 @@ class AuthScreenState extends State<AuthScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: GlobalVariables.greyBackgroundCOlor,
+      backgroundColor: GlobalVariables.greyBackgroundColor,
       body: SafeArea(
           minimum: const EdgeInsets.only(top: 30),
           child: Padding(
@@ -72,7 +72,7 @@ class AuthScreenState extends State<AuthScreen> {
                 ListTile(
                   tileColor: _auth == Auth.signup
                       ? GlobalVariables.backgroundColor
-                      : GlobalVariables.greyBackgroundCOlor,
+                      : GlobalVariables.greyBackgroundColor,
                   title: const Text(
                     "Create Account",
                     style: TextStyle(
@@ -132,7 +132,7 @@ class AuthScreenState extends State<AuthScreen> {
                 ListTile(
                   tileColor: _auth == Auth.signin
                       ? GlobalVariables.backgroundColor
-                      : GlobalVariables.greyBackgroundCOlor,
+                      : GlobalVariables.greyBackgroundColor,
                   title: const Text(
                     "Sign-in",
                     style: TextStyle(
