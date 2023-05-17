@@ -14,7 +14,7 @@ const DB =
 app.use(express.json());
 app.use(authRouter);
 
-app.get("/helloWorld", (req, res) => {
+app.get("/holler", (req, res) => {
   res.send("hello motherfucker");
 });
 
